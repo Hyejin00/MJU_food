@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_margin="15dp"
+        android:background="@drawable/text"
+        android:text="오늘은 뭐 먹지?"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:padding="50dp"
+            android:textSize="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circlebtn"
+            android:id="@+id/btn_korea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한식"/>
+        <Button
+            android:layout_marginTop="12dp"
+            android:padding="50dp"
+            android:textSize="40dp"
+            android:background="@drawable/circlebtn"
+            android:layout_toRightOf="@id/btn_korea"
+            android:id="@+id/btn_japan"
+            android:text="일식"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+        <Button
+            android:layout_margin="10dp"
+            android:padding="50dp"
+            android:textSize="40dp"
+            android:background="@drawable/circlebtn"
+            android:layout_below="@id/btn_korea"
+            android:id="@+id/btn_mi"
+            android:text="양식
+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:padding="30dp"
+            android:textSize="40dp"
+            android:background="@drawable/circlebtn"
+            android:layout_below="@id/btn_japan"
+            android:layout_toRightOf="@id/btn_mi"
+            android:id="@+id/btn_game"
+            android:text="랜덤   게임"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
