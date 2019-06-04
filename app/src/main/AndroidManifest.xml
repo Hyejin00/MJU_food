@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.project.hyejin.mju_food">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/mju"
+        android:label="명지맛집"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,10 +17,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Korea"/>
-        <activity android:name=".Japan"/>
-        <activity android:name=".America"/>
-        <activity android:name=".Game"/>
+        <activity android:name=".Korea"
+            android:label="한식"/>
+        <activity android:name=".Japan"
+            android:label="일식"/>
+        <activity android:name=".America"
+            android:label="양식"/>
+        <activity android:name=".Game"
+            android:label="랜덤뽑기"/>
+        <activity android:name=".Web"/>
 
     </application>
 
