@@ -7,7 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-public class America extends AppCompatActivity {
+public class Western extends AppCompatActivity {
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -16,7 +16,7 @@ public class America extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.america);
+        setContentView(R.layout.western);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         myDataset = new String[]{"WITH US","피자스쿨","미스터피자","주인백 파스타","은화수 식당","하늘 정원","차스쿡"};
 

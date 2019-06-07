@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.mju);
 
         class Click implements View.OnClickListener {
             @Override
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, Japan.class));
                         break;
                     case R.id.btn_mi:
-                        startActivity(new Intent(MainActivity.this, America.class));
+                        startActivity(new Intent(MainActivity.this, Western.class));
                         break;
                     case R.id.btn_game:
                         startActivity(new Intent(MainActivity.this, Game.class));

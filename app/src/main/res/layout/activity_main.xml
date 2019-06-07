@@ -12,56 +12,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
-            android:padding="50dp"
-            android:textSize="40dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/circlebtn"
-            android:id="@+id/btn_korea"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="한식"/>
+            android:textSize="50dp"
+            android:text="한식"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:background="@drawable/rice"
+            android:id="@+id/btn_korea"/>
         <Button
-            android:layout_marginTop="12dp"
-            android:padding="50dp"
+            android:text="일식"
             android:textSize="40dp"
-            android:background="@drawable/circlebtn"
+            android:background="@drawable/noodles"
             android:layout_toRightOf="@id/btn_korea"
             android:id="@+id/btn_japan"
-            android:text="일식"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
     </LinearLayout>
     <LinearLayout
+        android:layout_marginLeft="10dp"
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="190dp">
         <Button
-            android:layout_margin="10dp"
-            android:padding="50dp"
+            android:text="양식"
             android:textSize="40dp"
-            android:background="@drawable/circlebtn"
+            android:background="@drawable/pizza"
             android:layout_below="@id/btn_korea"
             android:id="@+id/btn_mi"
-            android:text="양식
-"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
         <Button
-            android:padding="30dp"
+            android:text="게임"
             android:textSize="40dp"
-            android:background="@drawable/circlebtn"
+            android:background="@drawable/dice"
             android:layout_below="@id/btn_japan"
             android:layout_toRightOf="@id/btn_mi"
             android:id="@+id/btn_game"
-            android:text="랜덤   게임"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
     </LinearLayout>
 </LinearLayout>

@@ -21,7 +21,8 @@
             android:label="한식"/>
         <activity android:name=".Japan"
             android:label="일식"/>
-        <activity android:name=".America"
+
+        <activity android:name=".Western"
             android:label="양식"/>
         <activity android:name=".Game"
             android:label="랜덤뽑기"/>

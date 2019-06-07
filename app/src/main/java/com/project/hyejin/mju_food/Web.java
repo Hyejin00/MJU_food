@@ -19,13 +19,8 @@ public class Web extends AppCompatActivity {
         Intent intent = getIntent();
         String url = intent.getStringExtra("Url");
 
-        web.setWebViewClient(new WebViewClient());
-
-        WebSettings webset = web.getSettings();
-        webset.setBuiltInZoomControls(true);
-
         web.loadUrl(url);
-
+        web.setWebViewClient(new WebViewClient());
 
     }
 
